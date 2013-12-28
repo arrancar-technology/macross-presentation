@@ -12,6 +12,8 @@ if(!configOriginal) {
 
 var application = {
   reset: function() {
+    Song.destroyAll();
+
     compound.app.set('config', JSON.parse(JSON.stringify(configOriginal)));
     send(compound.app.get('config'));
   },

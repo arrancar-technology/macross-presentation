@@ -11,7 +11,7 @@ exports.routes = function (map) {
 
   // Admin
   map.get('admin*', 'admin#index');
-  map.resources('status ', { path: 'api/1/status' });
+  map.resources('status', { path: 'api/1/status' });
 
   // Fixtures
   map.get('fixture/reset', 'fixture#reset');
