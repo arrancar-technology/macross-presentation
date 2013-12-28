@@ -23,6 +23,17 @@ var application = {
   }
 };
 
+var songs = {
+  create: function() {
+    var song = new Song({name: req.body.name, lyrics: req.body.lyrics})
+    song.save(function() {
+      send(song);
+    })
+  }
+};
+
 action('reset', application.reset);
 action('statusApplicationVersion', application.statusApplicationVersion);
 action('statusCommitHash', application.statusCommitHash);
+
+action('songsCreate', songs.create);

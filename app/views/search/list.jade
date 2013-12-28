@@ -1,0 +1,10 @@
+extends ../layouts/application
+block content
+    hr
+    .songs
+      h4 Songs
+      table
+        each song in songs
+          tr.table.table-bordered.table-striped.table-hover.table-condensed
+            td= song.name
+            td= song.lyrics

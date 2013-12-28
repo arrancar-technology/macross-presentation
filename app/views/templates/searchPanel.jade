@@ -1,0 +1,5 @@
+.searchPanel
+  form(action='/search', method='POST')
+    input.searchBox.form-control.input-lg(type='text', name='searchTerm', placeholder='Enter song title/artist/album')
+    span.input-group-btn
+      button.searchButton.btn.btn-lg.btn-primary(type='submit') Search
