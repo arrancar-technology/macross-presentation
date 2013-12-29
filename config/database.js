@@ -4,22 +4,22 @@ module.exports = {
   },
   func01: {
     driver: "mongodb"
-  , url:    "mongodb://admin:12345678MM@linus.mongohq.com:10003/macross-func01"
+  , url:    process.env.MONGODB_URL
   },
   qa01: {
     driver: "mongodb"
-  , url:    "mongodb://admin:12345678MM@paulo.mongohq.com:10003/macross-qa01"
+  , url:    process.env.MONGODB_URL
   },
   demo01: {
     driver: "mongodb"
-  , url:    "mongodb://admin:12345678MM@alex.mongohq.com:10003/macross-demo01"
+  , url:    process.env.MONGODB_URL
   },
   stage01: {
     driver: "mongodb"
-  , url:    "mongodb://admin:12345678MM@alex.mongohq.com:10004/macross-stage01"
+  , url:    process.env.MONGODB_URL
   },
   prod01: {
     driver: "mongodb"
-  , url:    "mongodb://admin:12345678MM@dharma.mongohq.com:10003/macross-prod01"
+  , url:    process.env.MONGODB_URL
   }
 };
